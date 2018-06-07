@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "CupCoin",
+    "description": "cupcoin test",
+    "version": "0.0.1",
+	"background": {
+        "scripts": ["js/background.js"]
+	},
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_title": "CupLab CCXT"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "permissions": [
+        "tabs",
+        "webRequestBlocking",
+        "webRequest",
+        "browsingData",
+        "storage",
+        "unlimitedStorage"
+    ],
+    "icons" : {
+        "128": "images/icon.png"
+    },
+    "options_page":"index.html"
+}
